@@ -1,0 +1,107 @@
+.Navbarr{
+    margin: 0;
+    padding: 0;
+    background-color: #093459;
+    height: 90px;
+    width: 100%;
+    border-radius: 2px 2px 2px 2px;
+}
+.containerr{
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+}
+.logo-iconss{
+    width: 30%;
+    height: 90px;
+    float: left;
+}
+.logo-iconss img{
+    width: 50%;
+    height: 90px;
+    float: left;
+}
+.logo-iconss p{
+    width: 50%;
+    float: left;
+    color: #ebeaea;
+    font-size: 20px;
+    position: relative;
+    left: 2%;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-weight: bold;
+}
+.card-icon{
+   width: 17.5%;
+   height: 90px; 
+   float: left;
+}
+.card-icon i{
+    color: #ebeaea;
+    font-size: 40px;
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    float: left;
+    left: 10%;
+    font-weight: bold;
+    
+}
+
+.card-icon p{
+    font-size: 20px;
+    width: 50%;
+    color: #ebeaea;
+    float: left; 
+    position: relative;
+    left: 2%;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-weight: bold;
+    text-align: center;
+}
+.card-icon p:hover{
+    color: palevioletred;
+}
+.create-icon{
+    width: 17.5%;
+    height: 90px;
+    float: left;
+}
+.create-icon i{
+    color: #ebeaea;
+    font-size: 40px;
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    float: left;
+    left: 10%;
+    font-weight: bold;
+    
+}
+.create-icon p{
+    font-size: 20px;
+    width: 50%;
+    color: #ebeaea;
+    float: left; 
+    position: relative;
+    left: 2%;
+    top: 50%;
+    transform: translate(0,-50%);
+    font-weight: bold;
+    text-align: center;
+}
+.create-icon p:hover{
+    color: palevioletred;
+}
+.account-icon{
+    width: 17.5%;
+    height: 90px;
+    float: left;
+}
+.logout-icon{
+    width: 17.5%;
+    height: 90px;
+    float: left;
+}
