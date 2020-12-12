@@ -7,7 +7,7 @@ export default function Navbar(){
             <div className="containerr">
                 <div className="logo-iconss">
                    <img src="https://clipartstation.com/wp-content/uploads/2018/09/clipart-toko-1.png"  alt=""></img>
-                   <a href="ss">JB-STORE</a>
+                   <a href="/home">JB-STORE</a>
                 </div>
                 <div className="card-icon">
                     <a href="dasd"><i className="fa fa-shopping-cart"></i><p>Cart</p></a>
@@ -21,8 +21,8 @@ export default function Navbar(){
                 <div className="logout-icon">
                     <a href="as"><i className='fa fa-sign-out'></i><p>Logout</p></a>
                 </div>
-                <a href="/cart">dsadsa</a>
             </div>    
+
         </div>
     )
 }
