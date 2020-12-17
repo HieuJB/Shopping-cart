@@ -240,5 +240,42 @@
     color: red;
     text-align: center;
 }
+.image-items-details{
+    margin-top: 2%;
+    width: 50%;
+    height: 500px;
+    float: left;
+};
+.image-items-details img{
+    
+   
+}
+#img-link-details{
+    width: 70%;
+    box-sizing: border-box;
+    margin-left: 15%;
+    margin-right: 15%;
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.price-items-details{
+    margin-top: 2%;
+    width: 50%;
+    height: 500px;
+    float: left;
+}
+.price-items-details h2{
+    width: 50%;
+
+}
+.number{
+    width: 40%;
+}
+.price-items-details-center{
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
 
 
