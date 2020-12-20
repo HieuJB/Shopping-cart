@@ -18,39 +18,21 @@ export default function Home1(props){
         class : ''
     })
     const [listshow,setListshow]=useState([{}]);
-    const sent_items = (event)=>{
-        // if(localStorage.getItem('items')==null){
-        //     const listshow=[];
-        //     listshow.push(items);
-        //     localStorage.setItem('items',JSON.stringify(listshow));
-        //     setAlert(
-        //         {
-        //         notification:"Thêm sản phẩm thành công",
-        //         class : 'alert alert-success succ'
-        //     });
-        //     setTimeout(()=>{
-        //         setAlert({
-        //             class:''
-        //         })
-        //     },1000);
-        // }else{
-        //     const listshow = JSON.parse(localStorage.getItem('items'));
-        //     listshow.push(items);
-        //     localStorage.setItem('items',JSON.stringify(listshow));
-        //     setAlert(
-        //         {
-        //         notification:"Thêm sản phẩm thành công",
-        //         class : 'alert alert-success succ'
-        //     });
-        //     setTimeout(()=>{
-        //         setAlert({
-        //             class:''
-        //         })
-        //     },1000);
-        // }
+    const sent_items = (id)=>{
         
         var length_items=JSON.parse(localStorage.getItem('items'));
-        if(length_items==null){
+        // for(var i=0;i<length_items.length;i++){
+        //     if(items.itemss==length_items[i].itemss){
+        //         setAlert(
+        //             {
+        //                 notification:"Sanr pham da ton tai",
+        //                 class : 'alert alert-danger succ'
+        //             });
+        //         break;
+        //     }
+        // }
+        
+        if(length_items==''){
             const listshow=[];
             listshow.push(items);
             localStorage.setItem('items',JSON.stringify(listshow));
@@ -64,79 +46,34 @@ export default function Home1(props){
                     class:''
                 })
             },1000);
-        }
-        else{
-            const listshow=length_items;
-                listshow.push(items);
-                localStorage.setItem('items',JSON.stringify(length_items));
-                setAlert(
+        }else{
+            
+                    listshow.push(items);
+                    localStorage.setItem('items',JSON.stringify(listshow));
+                    setAlert(
                         {
-                        notification:"Thêm sản phẩm thành công",
-                        class : 'alert alert-success succ'
-                    });
-                    setTimeout(()=>{
-                        setAlert({
-                            class:''
-                        })
-                    },1000);
+                                                    notification:"Thêm sản phẩm thành công",
+                                                    class : 'alert alert-success succ'
+                                                });
                     
-        }
-    }
-        // }else if(length_items!==''){
-        //     for(var i=0; i<length_items.length;i++){
-        //         if(items.id==length_items[i].id){
-        //             setAlert({
-        //                notification:"Sản phẩm đã có trong giỏ hàng",
-        //                 class : 'alert alert-danger succ'
-        //                 });
-        //                         setTimeout(()=>{
-        //                             setAlert({
-        //                                 class:''
-        //                             })
-        //                         },1000);
-        //                         break;
-                                
-        //     }
-        // }
-            // else{
-            //     const listshow=length_items;
-            //     listshow.push(items);
-            //     localStorage.setItem('items',JSON.stringify(length_items));
-            //     setAlert(
-            //             {
-            //             notification:"Thêm sản phẩm thành công",
-            //             class : 'alert alert-success succ'
-            //         });
-            // }
+                
+            }
             // listshow.push(items);
-            // localStorage.setItem('items',JSON.stringify(listshow));
-            // setAlert(
-            //     {
-            //     notification:"Thêm sản phẩm thành công",
-            //     class : 'alert alert-success succ'
-            // });
-            // setTimeout(()=>{
-            //     setAlert({
-            //         class:''
-            //     })
-            // },1000);
+            // localStorage.setItem('items',JSON.stringify(length_items));
+            //         setAlert(
+            //                     {
+            //                         notification:"Thêm sản phẩm thành công",
+            //                         class : 'alert alert-success succ'
+            //                     });
+            //                     setTimeout(()=>{
+            //                         setAlert({
+            //                             class:''
+            //                         })
+            //                     },1000);
+                }
+    
+
         
-        // for(var i=0; i<length_items.length;i++){
-        //     if(items.id==length_items[i].id){
-        //         setAlert(
-        //             {
-        //             notification:"Sản phẩm đã có trong giỏ hàng",
-        //             class : 'alert alert-danger succ'
-        //         });
-        //         setTimeout(()=>{
-        //             setAlert({
-        //                 class:''
-        //             })
-        //         },1000);
-        //     }
-        //     }
-        
-    //  }}
           
     
     return(

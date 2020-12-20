@@ -21,6 +21,7 @@ export default function Cart(){
     }
     useEffect(()=>{
         var data = JSON.parse(localStorage.getItem('items'));
+        if(data!==null){
         var price_items_sum ='0' ;
         for(var i=0;i<data.length;i++){
             price_items_sum = parseInt(price_items_sum)+parseInt(data[i].price);
@@ -28,11 +29,12 @@ export default function Cart(){
         var nb = price_items_sum;
         setPrice(nb);
         console.log(nb);
+    }
     },[price])
-
+    
     return(
         <div>
-        {list_items!==null &&
+        {list_show[0] &&
            <div className="cart-menu">
             {list_show.map((list_itemss,index)=>(
             <div key={index} className="cart-items-form">
@@ -58,6 +60,15 @@ export default function Cart(){
                 <button type="button" className="btn btn-primary">Buy</button>
             </div>
             </div>}
+            {list_items=="" &&
+            <div>
+               <div className="alert alert-danger" role="alert">
+                    Không có sản phẩm
+                </div>
+            </div>
+            
+
+            }
           
         </div>
     )
