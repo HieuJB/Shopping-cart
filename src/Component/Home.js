@@ -19,7 +19,7 @@ export default function Home(props){
                         <p>{props.namess.name}</p>
                     </div>
                     <div className="form-product-price">
-                        <p>{props.namess.price}</p>
+                        <p>{props.namess.price.toString().replace(/(?:(^\d{1,3})(?=(?:\d{3})*$)|(\d{3}))(?!$)/mg, '$1$2.')+'đ'}</p>
                     </div>
                     </div>
                 </Link>        

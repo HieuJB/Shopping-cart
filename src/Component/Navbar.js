@@ -1,16 +1,22 @@
 import React,{} from "react";
 import "./css.css";
 import Home from "./Home";
+import {
+    BrowserRouter as Router,
+    Link,
+    Route,
+    Switch,
+  } from 'react-router-dom';
 export default function Navbar(){
     return(
         <div className="Navbarr">
             <div className="containerr">
                 <div className="logo-iconss">
                    <img src="https://clipartstation.com/wp-content/uploads/2018/09/clipart-toko-1.png"  alt=""></img>
-                   <a href="/home">JB-STORE</a>
+                   <Link to="/index">JB-STORE</Link>
                 </div>
                 <div className="card-icon">
-                    <a href="dasd"><i className="fa fa-shopping-cart"></i><p>Cart</p></a>
+                    <Link to="/cart"><i className="fa fa-shopping-cart"></i><p>Cart</p></Link>
                 </div>
                 <div className="create-icon">
                     <a href="as"><i className='fas fa-plus-circle'></i><p>Create</p></a>

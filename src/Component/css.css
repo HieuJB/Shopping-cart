@@ -1,4 +1,7 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+*{
+    font-family: 'Langar', cursive;
+}
 .Navbarr{
     margin: 0;
     padding: 0;
@@ -61,6 +64,7 @@
     transform: translate(0,-50%);
     font-weight: bold;
     text-align: center;
+    cursor: pointer;
     
 }
 .card-icon:hover{
@@ -276,6 +280,105 @@
     position: relative;
     top: 50%;
     transform: translate(0,-50%);
+}
+.succ{
+    width: 20%;
+    margin-left: 40%;
+    margin-right: 40%;
+    text-align: center;
+}
+.cart-menu{
+    width: 60%;
+    height: auto;
+    margin-left: 20%;
+    margin-right: 20%;
+    margin-top: 4%;
+    border-top: 1px solid gainsboro;
+    border-left: 1px solid gainsboro;
+    border-right: 1px solid gainsboro;
+    box-shadow: 3px 3px 13px 10px  gainsboro;
+    border-radius: 10px 10px 10px 10px;
+    margin-bottom: 50px;
+    
+}   
+.cart-items-form{
+    width: 100%;
+    height: 300px;
+    border-bottom: 1px solid gainsboro;
+
+}
+.img-form{
+    width: 50%;
+    height: 300px;
+    float: left;
+}
+.img-form img{
+    width: 90%;
+    height: 260px;
+    margin-left: 5%;
+    margin-left: 5%;
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+}
+.price-form{
+    width: 27%;
+    height: 300px;
+    float: left;
+}
+.price-form-details{
+    width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%)
+}
+.remove-form{
+    width: 23%;
+    height: 300px;
+    float: left;
+}
+.rem{
+    font-size: 35px;
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    cursor: pointer;
+    color: rebeccapurple;
+    height: 35px;
+    width: 30%;
+    float: left;
+    
+}
+.rem:hover{
+    color:red;
+}
+.price-form-sum{
+    width: 50%;
+    height: 100px;
+    font-size: 30px;
+    float: left;
+}
+.price-form-sum p{
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    margin-left: 14%;
+}
+.price-form-sum-btn{
+    width: 50%;
+    height: 100px;
+    float: left;
+}
+.price-form-sum-btn button{
+    width: 30%;
+    float: right;
+    position: relative;
+    top: 50%;
+    transform: translate(0,-50%);
+    margin-right: 15%;
+}
+.price-form-sum-btn button:hover{
+    background-color:green;
 }
 
 
